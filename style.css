@@ -1,0 +1,98 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --clr-light-gray: hsl(212, 45%, 89%);
+    --clr-grayish-blue: hsl(219, 100%, 93%);
+    --clr-dark-blue: hsl(217, 71%, 14%);
+    --clr-darkish-blue: hsl(218, 44%, 22%);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:monospace;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(var(--clr-darkish-blue), white, var(--clr-dark-blue));
+    padding: 2em;
+    margin: 2em;
+}
+
+
+#timeContainer {
+    text-align: center;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem;
+    background: url(home_header_bg_night_english.gif), var(--clr-dark-blue);
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    border: 8px solid var(--clr-dark-blue);
+    padding-block-end: 4rem;
+    background-position: center;
+    box-shadow: 0px 25px 510px 65px white;
+}
+
+.timerBtn {
+    background: linear-gradient(var(--clr-dark-blue), var(--clr-darkish-blue));
+    background-position: center;
+    border: 0;
+    padding: .6rem 3rem;
+    margin: .465rem;
+    font-size: 1.2rem;
+    border-radius: 2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    width: 12rem;
+    color: white;
+}
+
+#timeDisplay {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .timerBtn {
+        color: white;
+        border: 2px solid;
+        width: 100%;
+        margin: .4rem;
+    }
+
+    #timeDisplay {
+        color: white;
+    }
+
+    #timeContainer {
+        background: url(home_header_bg_night_english.gif), var(--clr-dark-blue);
+        background-position: center;
+    }
+
+    #timeDisplay {
+        font-size: 1.5rem;
+    }
+
+    .timerBtn {
+        background-color: white;
+        border: 0;
+        padding: .4rem 3.5rem;
+        margin: .265rem;
+        font-size: 1.265rem;
+        border-radius: 2em;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: var(--clr-dark-blue);
+    }
+}
+
+#timeContainer img {
+    width: 100%;
+}
